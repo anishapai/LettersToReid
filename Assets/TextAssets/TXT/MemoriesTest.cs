@@ -4,7 +4,7 @@ using UnityEngine;
  * Description: Tests converting a single json file
  */
 
-public class Memories : MonoBehaviour 
+public class MemoriesTest : MonoBehaviour 
 {
 
     public TextAsset jsonMemory;
