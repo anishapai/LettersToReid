@@ -1,6 +1,10 @@
 using UnityEngine;
 
-public class TheMemories : MonoBehaviour 
+/* Author: Anisha Pai
+ * Description: Tests converting a single json file
+ */
+
+public class Memories : MonoBehaviour 
 {
 
     public TextAsset jsonMemory;
