@@ -11,7 +11,7 @@ public class Memories : MonoBehaviour
 
     public void Start() {
 
-            AMemory memories = JsonUtility.FromJson<AMemory>(jsonMemory.text);
+            Memory memories = JsonUtility.FromJson<AMemory>(jsonMemory.text);
             print(memories.body);
  
     }
