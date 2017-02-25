@@ -7,3 +7,5 @@ Created by Martha Hollister
 - Maia Doerner
 - Xuzhen Xiang
 - Jeffrey Abt
+- Shuyang Wang
+
