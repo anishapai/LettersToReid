@@ -14,9 +14,8 @@ public sealed class TestingMemory : MonoBehaviour
         parse = GetComponent<MemoriesParser>();
         text = GetComponent<Text>();
 
-
-                text.text = parse.getMemory(IDgen.Next(1, parse.getLength()));
-                // the getMemory input can be changed to test a specific memory
-                print(parse.getMemory(IDgen.Next(1, parse.getLength())));
+        // the getMemory input can be changed to test a specific memory
+        text.text = parse.getMemory(IDgen.Next(1, parse.getLength()));
+        print(parse.getMemory(IDgen.Next(1, parse.getLength())));
     }
 }

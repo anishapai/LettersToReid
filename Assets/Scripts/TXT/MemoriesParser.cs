@@ -19,19 +19,15 @@ public class MemoriesParser: MonoBehaviour {
     }
 
     public String getMemory(int id) {
-        foreach (Memory searchMemory in allMemories.mmrs) {
-            if (searchMemory.id == id) {
-                return searchMemory.Body;
-            }
-        }
-        return "Memory not found. Choose an id number that is an integer between 1 and " + allMemories.mmrs.Length;
+
+        if (allMemories.memoryLookup.ContainsKey(id))
+            return allMemories.memoryLookup[id];
+        else
+            return "Memory not found. Choose an id number that is an integer between 1 and " + allMemories.memoryLookup.Count;
+       
     }
 
     public int getLength() {
-        return allMemories.mmrs.Length;
-    }
-
-    public TextAsset getJson() {
-        return jsonMemory;
+        return allMemories.memoryLookup.Count;
     }
 }
